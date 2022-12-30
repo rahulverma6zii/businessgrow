@@ -1,0 +1,241 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primarycolor:orange;
+    --secondarycolor:black
+}
+.primary{
+    background-color: var(--primarycolor) !important;
+    color: var(--secondarycolor) !important
+}
+.secondary{
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+}
+button{
+    font-weight: 600;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-size: 15px;
+}
+h1{
+    font-weight: 600 !important;
+}
+
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+hr,hr.section-divider{
+    margin: 3rem 0;
+    background-color: white;
+}
+.card{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+/* header */
+header{
+   
+    background-color: black;
+    padding-bottom: 150px;
+    height: 100vh;
+
+}
+/* navbar */
+
+nav.navbar{
+    z-index: 10;
+    height: 90px;
+    color: black;
+    border-bottom: 1px solid rgb(43, 42, 42);
+
+}
+#navbarText{
+    margin-left: 20%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.navbar-light .navbar-nav .nav-link.active{
+    color: white;
+    background-color:var(--primarycolor)
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: white;
+    background-color:var(--primarycolor)
+}
+.nav-item{
+    margin: 0px 15px;
+}
+
+  .overlay{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    width: 100%;
+    background-image: url("https://img.freepik.com/free-photo/group-diverse-people-having-business-meeting_53876-25060.jpg?w=1060&t=st=1672376992~exp=1672377592~hmac=97d8178fac3f5a168e8e52f57023478c4ea27fbab614773bddaa0f8952128531");
+    z-index: 0;
+    opacity: 0.2;
+    
+ 
+  }
+
+  /* herosection */
+  .hero-section{
+  z-index: 2;
+
+  }
+  .main-title{
+    
+    font-weight: 600;
+  }
+
+  @media screen and (max-width:600px) {
+    header{
+   
+      
+        height: 70vh;
+    
+    }
+    #navbarText{
+        background-color: black;}
+    .nav-item{
+            margin: 2px 0px 5px 5px;
+        }
+       
+
+    
+  }
+
+
+  /* dropdown */
+
+  
+
+/* dropdown css */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #000000a1;
+   color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  @media screen and (max-width:600px) {
+    .dropdown-content {
+     background-color: black;
+     color: var(--primarycolor);
+    }
+  }
+
+
+
+
+
+  /* businesssolution   */
+  .businesssolution .card{
+    height: 250px;
+    padding: 20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .businesssolution img{
+          height: 80px;
+          width: 80px;
+  }
+
+.accordion-button{
+  padding: 1rem 0rem !important;
+}
+
+
+.jumbotron{
+    padding: 30px 0px;
+    background-color: rgba(255, 242, 125, 0.758) !important;
+}
+/* business-card-row */
+#business-card-row .card:hover{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#business-card-row .fa{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+
+/* caroue */
+body > main > section:nth-child(12) > div > div > div > div.owl-nav{
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+.team-card .card{
+    height: 350px;
+    position: relative;
+    text-align: center;
+}
+.team-card .card img{
+   object-fit: cover;
+}
+.social-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    height:150px;
+    left: 10%;
+    width: 80%;
+    top: 80%;
+    background-color: var(--secondarycolor);
+    color: var(--primarycolor);
+    padding: 10px;
+}
+
+.fa-check{
+    margin-right: 10px;
+    color: green;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    font-size: 3rem !important;
+}
+footer .nav-item {
+    margin: 0px 0px;
+}
+.form-control{
+    width: auto !important;
+}
+@media screen and (max-width:600px) {
+   .team-card .card{
+    margin: 65px 0px;
+   }
+}
